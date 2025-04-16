@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  display: flex;
+}
+#website{
+  width: 1400px;
+  margin: auto;
+  display: flex;
+  position: relative;
+}
+@media screen and (max-width: 1500px) {
+  .quangcao1,
+  .quangcao2 {
+    display: none;
+  }
+
+  .main1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.quangcao1 {
+  position: sticky;
+  left: 20px;
+  top: 90px;
+  z-index: 1000;
+  transition: all 1s;
+}
+.quangcao2 {
+  right: 20px;
+  top: 90px;
+  position: sticky;
+  z-index: 1000;
+  transition: all 1s;
+}
+.quangcao1 > img {
+  width: 155px;
+  border-radius: 10px;
+}
+.quangcao2 > img {
+  width: 155px;
+  border-radius: 10px;
+}
+img {
+  transition: all 0.5s;
+}
+img:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+}
+.container {
+  max-width: 1100px;
+  margin: 0px auto;
+  padding: 20px;
+}
+.main {
+  display: flex;
+}
+.mainleft,
+.main-right {
+  width: 50%;
+  padding: 10px;
+}
+.main-right {
+  margin-left: 60px;
+}
+.image-big {
+  width: 100%;
+  height: 400px;
+}
+.img-small img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  cursor: pointer; /* chuyển con chuột thành ngón tay giúp ng dùngdùng hiểu có bấm được k*/
+}
+.price {
+  color: green;
+  font-size: 24px;
+  font-weight: bold;
+}
+.buttons button {
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 7px;
+  font-size: 16px;
+}
+.back-btn {
+  background-color: #007bff;
+  color: white;
+}
+.cart-btn {
+  background-color: #28a745;
+  color: white;
+}
+.related-products {
+  margin-top: 20px;
+}
+.related-products .col-3 {
+  width: 24%;
+  padding: 5px;
+  text-align: center;
+}
+.related-products img {
+  width: 100%;
+  height: 200px;
+}
+.main-bottom {
+  display: flex;
+}
+.col-3 {
+  width: 25%;
+}
+.col-3 b {
+  display: block;
+  margin-top: 10px;
+}
+.col-3 img {
+  height: 150px;
+  background: linear-gradient(to right, #e8ebe6, rgb(234, 241, 240)) no-repeat;
+  background-size: cover;
+  box-shadow: 0px 10px 20px #8d8888;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+@media (max-width: 768px) {
+  .mainleft,
+  .main-right {
+    width: 100%;
+  }
+  .related-products .col-3 {
+    width: 48%;
+  }
+}

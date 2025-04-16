@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #85e1f1;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  width: 1400px;
+  margin: auto;
+  padding: 20px;
+  gap: 20px;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+}
+.main-content {
+  background-color: rgb(212, 237, 244);
+  padding: 20px;
+  width: 1200px;
+  margin: auto;
+  border-radius: 10px;
+}
+.main-content a img {
+  width: 40px;
+  float: right;
+  margin-top: -70px;
+  margin-right: -15px;
+}
+h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.content-box {
+  background-color: #e0dede;
+  padding: 10px;
+}
+.content-box h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.content-box ol {
+  padding-left: 20px;
+}
+
+.content-box li {
+  margin-bottom: 6px;
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.hotline {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.hotline a {
+  color: #0077cc;
+  text-decoration: none;
+}
+.table1,
+.table2 {
+  border-collapse: collapse; /* gộp các viền của từng ô nhỏ */
+}
+.table1 p,
+.table2 p {
+  margin: 6px;
+}
+@media screen and (max-width: 1500px) {
+  .banner-left img,
+  .banner-right img {
+    display: none;
+  }
+
+  .main1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.banner-right,
+.banner-left {
+  position: sticky;
+  width: 150px;
+  top: 70px;
+  left: 20px;
+}
+img {
+  transition: all 1s;
+}
+img:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+}
+.banner-right img,
+.banner-left img {
+  width: 150px;
+  border-radius: 10px;
+}
+.text {
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
