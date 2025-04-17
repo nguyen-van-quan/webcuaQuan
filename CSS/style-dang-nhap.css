@@ -1,7 +1,7 @@
 body{
     width: 100%;
     height: 100%;
-    background-image: url("/imgs/anh-dang-nhap/vutru.jpg");
+    background-image: url("../imgs/anh-dang-nhap/vutru.jpg");
     background-size: cover;
     margin: 0px;
 }
