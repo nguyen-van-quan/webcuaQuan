@@ -197,7 +197,7 @@ img:hover {
   border-radius: 10px;
 }
 #main1 {
-  width: 1160px;
+  width: 1360px;
   display: flex;
   text-align: center;
   margin: auto;
@@ -320,24 +320,19 @@ h5 {
 .sanphamcuoitrang {
   width: 100%;
   border-radius: 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
 .sanpham1 {
-  width: 25%;
   height: 270px;
   background: linear-gradient(to right, #e8ebe6, rgb(234, 241, 240)) no-repeat;
   background-size: cover;
   box-shadow: 0px 10px 20px #8d8888;
   margin: 15px 15px 0px 15px;
   border-radius: 10px;
-  transition: all 0.5s;
-}
-
-.anhchinhsanpham {
-  width: 95%;
-  height: 170px;
-  filter: drop-shadow(5px 5px 5px rgb(213, 221, 169));
-  justify-content: center;
+  padding-top: 5px;
+  transition: all 1s;
 }
 .sanpham1:hover {
   transform: scale(1.05);
@@ -349,6 +344,10 @@ h5 {
 .sanpham1 p:hover {
   transform: scale(1.05);
   transition: all 1s;
+}
+.anhchinhsanpham{
+  height: 150px;
+  filter: drop-shadow(5px 5px 5px rgb(213, 221, 169));
 }
 .mienphigiaohang {
   width: 40px;
